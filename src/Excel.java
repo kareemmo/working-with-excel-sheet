@@ -14,9 +14,9 @@ public class Excel {
     File excelFile = new File("Perdiem.xlsx");
     FileInputStream fis = new FileInputStream(excelFile);
 
-    // we create an XSSF Workbook object for our XLSX Excel File
+    //  create an XSSF Workbook object for our XLSX Excel File
     XSSFWorkbook workbook = new XSSFWorkbook(fis);
-    // we get first sheet
+    // get first sheet
     XSSFSheet sheet = workbook.getSheetAt(0);
 
     // we iterate on rows
